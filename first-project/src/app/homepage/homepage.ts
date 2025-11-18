@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class Homepage {
 
+  public color = ""
+  public displayColorName:any;
+  getColorName(event:Event){
+      this.color = (event.target as HTMLInputElement).value;
+  }
+  displayColor(){
+    this.displayColorName = this.color;
+  }
 }

@@ -1,3 +1,14 @@
-<div class="main-container bg-dark-secondary">
-    <h1 class="bg-dark text-white p-2">This is HomePage</h1>
+<div class="main-container bg-dark vh-100">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-white p-2 border border-danger rounded">This is HomePage</h1>
+        </div>
+        <div class="col-12">
+            <div class="col-6">
+                <input type="text" placeholder="Enter your Favourite Color" class="form-control" (input)="getColorName($event)">
+            </div>
+            <button class="btn btn-primary mt-2" (click)="displayColor()">Show Color</button>
+            <h1 class="text-white">Your Color Name is : {{displayColorName}}</h1>
+        </div>
+    </div>
 </div>
